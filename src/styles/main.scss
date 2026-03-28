@@ -1,0 +1,127 @@
+@import 'bootstrap/scss/bootstrap';
+
+:root {
+  --brand-dark: #0d1b2a;
+  --brand-mid: #1b263b;
+  --brand-accent: #4cc9f0;
+  --brand-soft: #f7f9fc;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  background: #fff;
+  color: #111;
+}
+
+.site-navbar {
+  background: rgba(13, 27, 42, 0.94);
+  backdrop-filter: blur(8px);
+
+  .navbar-brand,
+  .nav-link {
+    color: #fff;
+  }
+
+  .nav-link:hover,
+  .nav-link:focus {
+    color: var(--brand-accent);
+  }
+}
+
+.tracking-wide {
+  letter-spacing: 0.08em;
+}
+
+.apply-btn {
+  background: linear-gradient(90deg, #3a86ff 0%, #4cc9f0 100%);
+  border: none;
+  color: #fff;
+  font-weight: 700;
+
+  &:hover,
+  &:focus {
+    background: linear-gradient(90deg, #2f74de 0%, #35b6dd 100%);
+    color: #fff;
+  }
+}
+
+.hero-section {
+  background: radial-gradient(circle at top right, #415a77 0%, var(--brand-dark) 48%, #08101a 100%);
+  color: #fff;
+}
+
+.eyebrow {
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  font-size: 0.85rem;
+  font-weight: 700;
+  color: #8ecae6;
+}
+
+.hero-card {
+  border-radius: 1rem;
+  background: rgba(255, 255, 255, 0.96);
+  color: #152238;
+}
+
+.py-lg-6 {
+  @media (min-width: 992px) {
+    padding-top: 5rem !important;
+    padding-bottom: 5rem !important;
+  }
+}
+
+.proof-section,
+.faq-section {
+  background: var(--brand-soft);
+}
+
+.proof-card,
+.service-card,
+.process-card,
+.application-form {
+  border-radius: 1rem;
+}
+
+.metric {
+  font-size: 2.1rem;
+  font-weight: 800;
+  color: #1d3557;
+}
+
+.services-section {
+  background: #fff;
+}
+
+.process-section {
+  background: #f1f5fb;
+
+  ol {
+    padding-left: 1.2rem;
+  }
+
+  li {
+    color: #33415c;
+    font-weight: 500;
+  }
+}
+
+.application-page {
+  min-height: 100vh;
+  background: linear-gradient(180deg, #f7fbff 0%, #eef3fb 100%);
+
+  .application-form {
+    background: #fff;
+  }
+
+  label {
+    font-weight: 600;
+    color: #1b263b;
+  }
+
+  .form-control,
+  .form-select {
+    border-radius: 0.65rem;
+    padding: 0.72rem 0.9rem;
+  }
+}
